@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+	<title>TESTING STAGE</title>
+
+	<link rel="stylesheet" href="../styles/cropper-jquery-2.3.0.mins.css" />
+	<link rel="stylesheet" href="../styles/phroper.css" />
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js" ></script>
+	<script type="text/javascript" src="../scripts/cropper-jquery-2.3.0.mins.js" ></script>	
+	<script type="text/javascript" src="../scripts/phroper.js" ></script>
+
+	<style type="text/css">
+		#photo-uploader {
+			margin-top: 50px;
+			width: 480px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+	<script type="text/javascript">
+		console.log(phroper.testEnvironment());
+		$( document ).ready( function () {
+			phroper.start(true, 480, 480);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="photo-uploader"></div>
+</body>
